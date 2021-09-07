@@ -3,17 +3,18 @@ import "./styles/artist-detail.scss";
 function Artistdetail({artistDetail, artistCallback} : {artistDetail: any, artistCallback:any}) {
 
     const data:any = artistDetail;
+    console.log(data)
 
     function returnToSearch(){
         artistCallback(artistDetail);
     }
 
     return (
-        null != artistDetail ?
+        null != artistDetail && !data.error?
             <div id="musician">
                 <div>
                     <button type="button" onClick={returnToSearch}>Back to Artist List</button>
-                    <h4>{data.artist.name}</h4>
+                    <h4>{data.artist != null ? data.artist.name : null}</h4>
                     {data.artist.bio.summary.length < 100 ? <p className="summary">Summary not available</p> : <p className="summary">{data.artist.bio.summary}</p>}
                     <a className="see-more" href={data.artist.bio.links.link.href} target="_blank">Read more about {data.artist.name}</a>
                     <small>Published {data.artist.bio.published}</small>
