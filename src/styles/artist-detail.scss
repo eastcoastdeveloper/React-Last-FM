@@ -1,0 +1,110 @@
+#musician {
+    background-color: #457b9d;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 992px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    bottom: 0;
+    width: calc(100% - 45px);
+    box-shadow: 2px 0px 6px 2px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    max-height: calc(90vh - 120px);
+
+    > div {
+        overflow: hidden;
+    }
+
+    h4 {
+        color: white;
+        margin: 0;
+        padding: 15px 0 15px 15px;
+        border-bottom: 1px solid white;
+        // width: calc(100% - 190px);
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+    }
+
+    button {
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        font: bold 14px sans-serif;
+        padding: 3px 4px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        top: 12px;
+    }
+
+    .summary {
+        color: white;
+        font: normal 14px sans-serif;
+        line-height: 23px;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .see-more,
+    small {
+        color: white;
+        font: normal 12px sans-serif;
+        text-decoration: none;
+        line-height: 23px;
+        margin-top: 0;
+        display: block;
+        padding-left: 15px;
+    }
+
+    .see-more {
+        font-style: italic;
+    }
+
+    .similar-artists {
+        padding-left: 15px;
+        margin-top: 10px;
+        line-height: 23px;
+
+        .names {
+            padding: 10px 0;
+        }
+
+        .names-links {
+            font: italic 14px sans-serif;
+            margin-left: 20px;
+            cursor: pointer;
+            color: #ffffff;
+            float: right;
+            padding-right: 20px;
+        }
+    }
+
+    .names {
+        color: white;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: background-color .2s;
+        font: normal 14px sans-serif;
+    }
+
+    .tags {
+        display: flex;
+        margin-top: 20px;
+        padding-left: 15px;
+
+        >div {
+            font: bold 13px sans-serif;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        >div:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

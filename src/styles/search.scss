@@ -1,0 +1,28 @@
+.search {
+    input, button {
+        box-shadow: 1px 1px 3px 2px rgba(0,0,0,.1);
+        color: #313b3f;
+        border: none;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    input {
+        outline: none;
+        padding: 5px;
+        width: 200px;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    button {
+        padding: 4px 0 5px 0;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+    }
+}
